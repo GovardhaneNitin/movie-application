@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+## React Movie Application – Enhanced Version
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based Movie Application that demonstrates the use of React components, state management, props, and data manipulation.
 
-## Available Scripts
+### Assignment Tasks Completed
 
-In the project directory, you can run:
+#### Task 1: Add Genre Filtering
 
-### `npm start`
+- Added a new `GenreFilter` component that displays a dropdown for selecting movie genres.
+- Integrated genre filtering in `App.js` by:
+  - Adding a `genreFilter` state to track the selected genre.
+  - Creating a `handleGenreChange` function to update the genre filter.
+  - Filtering movies by both search value and selected genre.
+- Passed unique genres and the handler to the `GenreFilter` component.
+- Updated `index.css` to add basic styling for the genre filter dropdown.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Task 2: Display Movie Release Year
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Modified the `MovieCard` and `moviecardlist` components to accept and display the `releaseYear` prop for each movie.
+- The release year is now shown prominently on each movie card.
 
-### `npm test`
+### Summary of Changes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **App.js**: Added state and logic for genre filtering, integrated the new `GenreFilter` component, and ensured release year is passed to each movie card.
+- **GenreFilter.js**: New component for genre selection, receiving genres and handler as props.
+- **moviecard.js & moviecardlist.js**: Updated to accept and display the `releaseYear` prop.
+- **index.css**: Added styles for the genre filter dropdown.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This enhanced application allows users to:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Search movies by name
+- Filter movies by genre
+- View the release year of each movie
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+> **How to run:**
+>
+> 1. Clone the repository.
+> 2. Run `npm install` to install dependencies.
+> 3. Run `npm start` to launch the app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Assignment by:** Balagangadhar Reddy Sir
