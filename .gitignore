@@ -1,0 +1,27 @@
+# Node modules directory
+/node_modules
+
+# Build output directory
+/build
+
+# Dependency directories
+/.pnp
+/.pnp.js
+
+# IDE or editor config files
+.vscode
+.idea
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage folder
+/coverage
